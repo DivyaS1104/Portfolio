@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "PphBvRp9t_BGTZnSs",
+      });
+   })();
+</script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="toggle-btn">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+<br><br><br><br><br>
+  <section id="home" class="section">
+  <div class="hero-container">
+  <div class="hero-image fade-slide-left">
+    <img src="images/home.png" alt="Divya's Photo" />
+  </div>
+  <div class="hero-text fade-slide-right">
+    <h1>Hello, I'm <span class="highlight">Divya 👋</span></h1>
+    <p>I am a <span id="typed-text"></span><span id="cursor">|</span></p><br><br>
+    <a href="#projects" class="btn neon-glow">See My Work <span class="btn-icon">🚀</span></a>
+  </div>
+</div>
+</section>
+<br><br><br><br>
+<br>
+<br><br><br><br><br><br><br>
+
+  <section id="about" class="section">
+    <h2>About Me</h2><center>
+    <div class="about-content">
+      <p>
+        I am a passionate <strong>Web Developer</strong> and a recent <strong>BCA graduate</strong>.  
+        I specialize in crafting clean, user-friendly interfaces and robust backend systems.  
+        As a fresher, I'm driven to continuously learn and apply modern web technologies in real-world projects.
+      </p>
+      <p>
+        💻 My technical stack includes:  
+        <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>MySQL</strong>,  
+        <strong>Python</strong>, <strong>PHP</strong>, <strong>Node.js</strong>, <strong>React.js</strong>,  
+        and <strong>MongoDB</strong>.
+      </p>
+  
+      <a href="Resume_Divya.pdf" class="resume-btn neon-glow" target="_blank" download>📄 Download My Resume</a>
+      <p>Here are some of the certifications I’ve earned along the way — showcasing my commitment to continuous learning and skill development.<br><b>Click below</b></p>
+    </center>
+      <button id="toggle-certificates" class="neon-glow">🎓 View Certificates</button>
+
+  <div id="certificate-gallery" class="hidden">
+    <div class="certificate-grid">
+      <img src="certificates/cert1.png" alt="Certificate 1" />
+      <img src="certificates/cert2.png" alt="Certificate 2" />
+      <img src="certificates/cert3.png" alt="Certificate 3" />
+      <img src="certificates/cert4.png" alt="Certificate 4" />
+      <img src="certificates/cert5.png" alt="Certificate 5" />
+    </div>
+  </div>
+    </div>
+  </section>
+<br><br><br><br><br>
+<section id="technologies" class="section">
+  <h2>Technologies</h2>
+  <div class="tech-bars">
+    <div class="bar">
+      <span class="label">HTML 90%</span>
+      <div class="progress html"></div>
+    </div>
+    <div class="bar">
+      <span class="label">CSS 85%</span>
+      <div class="progress css"></div>
+    </div>
+    <div class="bar">
+      <span class="label">JavaScript 80%</span>
+      <div class="progress js"></div>
+    </div>
+    <div class="bar">
+      <span class="label">Python 75%</span>
+      <div class="progress python"></div>
+    </div>
+    <div class="bar">
+      <span class="label">React 80%</span>
+      <div class="progress react"></div>
+    </div>
+    <div class="bar">
+      <span class="label">Node.js 70%</span>
+      <div class="progress node"></div>
+    </div>
+    <div class="bar">
+      <span class="label">MySQL 80%</span>
+      <div class="progress sql"></div>
+    </div>
+    <div class="bar">
+      <span class="label">Flask 75%</span>
+      <div class="progress flask"></div>
+    </div>
+    <div class="bar">
+      <span class="label">GitHub 70%</span>
+      <div class="progress git"></div>
+    </div>
+  </div>
+</section>
+
+<br><br><br><br>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2><br>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/face-attendance.png" alt="Face Recognition Attendance System" class="project-image">
+        <h3>Student Lab Entry Face Recognition Attendance System</h3>
+      <p>A secure attendance system using facial recognition with Flask and OpenCV. Tracks entry/exit, predicts gender, and features an admin dashboard.</p>
+        <!-- View Project Button -->
+        <a href="https://github.com/DivyaS1104/Face-recogniton-" target="_blank" class="view-btn neon-glow">🔗 View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/cafe.png" alt="Cafe website" class="project-image">
+        <h3>Cafe website</h3>
+      <p>"A cozy and inviting cafe website crafted with Flask and MySQL, offering a smooth browsing experience, menu filtering, and a Featured Drinks section."</p>
+        <!-- View Project Button -->
+  <a href="https://github.com/DivyaS1104/Cafe-website" target="_blank" class="view-btn neon-glow">🔗 View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/whisk-wrap.png" alt="Whisk and Wrap E-commerce Site" class="project-image">
+        <h3>Whisk and Wrap</h3>
+      <p>An elegant e-commerce site for desserts and gifting. Built with Flask and MySQL, featuring a serene UX, product filtering, and a Best Sales page.</p>
+        <!-- View Project Button -->
+  <a href="https://github.com/DivyaS1104/E-commerce-website" target="_blank" class="view-btn neon-glow">🔗 View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/cookbook.png" alt="Cookbook" class="project-image">
+        <h3>CookBook : Your virtual kitchen assistant</h3>
+      <p>A sleek cookbook website powered by Node.js and REST APIs, with a React frontend offering dynamic recipe browsing, smart filters, and personalized favorites.</p>
+        <!-- View Project Button -->
+  <a href="https://github.com/DivyaS1104/CookBook-Your-Virtual-Kitchen-Assistant" target="_blank" class="view-btn neon-glow">🔗 View Project</a>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br><br><br>
+  <section id="contact" class="section">
+  <h2>Contact Me</h2><br>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="neon-glow">Send Message 💌</button>
+  </form>
+  <p id="form-status"></p>
+  <br><p style="text-align: center;">Or contact me through :-</p>
+  <div class="social-links">
+  <a href="https://wa.me/918939205504" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/divyasrinivasan04/" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/DivyaS1104" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+</section>
+
+
+  <footer>
+    <p>© 2025 Divya. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+ 
+
+</body>
+</html>
